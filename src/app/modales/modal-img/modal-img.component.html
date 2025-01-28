@@ -1,0 +1,21 @@
+<div class="contenedorModal">
+    <div class="superior">
+        <div class="img">
+            <img [src]="image.urls.small" [alt]="image.alt_description" />
+        </div>
+        <p>Description: {{image.alt_description}}</p>
+        <div class="contenedor-tags">
+            <div class="tags"  *ngFor="let tag of image.tags">
+                <p>#{{tag.title}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="inferior">
+        <div class="creado">
+            <p>{{formattedDate}}</p>
+        </div>
+        <div class="likes">
+            <p>likes: {{image.likes}}</p>
+        </div>
+    </div>
+</div>

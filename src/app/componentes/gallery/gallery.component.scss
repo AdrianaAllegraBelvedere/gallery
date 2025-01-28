@@ -1,0 +1,222 @@
+/* .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .input-container {
+    position: relative;
+    width: 300px;
+    height: 30px;
+
+    background-color: #ebe5e5;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    -webkit-box-shadow: 11px 13px 39px 1px rgb(133, 130, 131);
+    -moz-box-shadow: 11px 13px 39px 1px rgb(107, 106, 106);
+    box-shadow: 3px 3px 8px -5px rgb(102, 96, 100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 20px;
+    .search-icon {
+      font-size: 30px; 
+      color: #3f3f3f; 
+      pointer-events: none; 
+    }
+    input {
+      border-radius: 20px;
+      width: 100%;
+      padding-left: 40px;
+      height: 38px;
+      border: none;
+      background: #ebe5e5;
+      color: #3f3f3f;
+      font-weight: 400;
+    }
+    input:focus {
+      border: none;
+      outline: none; 
+      box-shadow: none;
+    }
+  }
+}
+.gallery {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  h1 {
+    color: #3f3f3f;
+    font-weight: 400;
+  }
+
+  .img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    .image-item {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+    }
+    .btn-img {
+      width: 100%;
+      height: 100%; 
+      border: none;
+      background: #ffffff;
+      .image-item button img {
+        top: 50%; 
+        left: 50%;
+        max-width: 100%; 
+        height: auto;
+      }
+    }
+   
+  }
+}
+ */
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Buscador */
+  .input-container {
+    position: relative;
+    width: 300px;
+    height: 30px;
+
+    background-color: #ebe5e5;
+    color: #ffffff;
+    border-radius: 20px;
+    border: none;
+    -webkit-box-shadow: 11px 13px 39px 1px rgb(133, 130, 131);
+    -moz-box-shadow: 11px 13px 39px 1px rgb(107, 106, 106);
+    box-shadow: 3px 3px 8px -5px rgb(102, 96, 100);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 20px;
+    .search-icon {
+      font-size: 30px;
+      color: #3f3f3f;
+      pointer-events: none;
+    }
+    input {
+      border-radius: 20px;
+      width: 100%;
+      padding-left: 40px;
+      height: 38px;
+      border: none;
+      background: #ebe5e5;
+      color: #3f3f3f;
+      font-weight: 400;
+    }
+    input:focus {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  /* Galeria */
+  .gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  h1 {
+    color: #3f3f3f;
+    font-weight: 400;
+    padding: 20px;
+  }
+  .image-item{
+    .btn-img{
+      border: none;
+      background-color: #ffffff;
+    }
+  }
+  }
+}
+/* Dispositivos pequeños */
+@media (max-width: 430px) {
+  .img {
+    .image-item {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      padding: 20px;
+    }
+    .btn-img {
+      width: 100%;
+      height: 100%; 
+      background: #ffffff;
+      .image-item button img {
+        max-width: 100%; 
+        height: auto;
+      }
+    }
+  }
+   
+}
+/* Dispositivos medianos */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    .image-item {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+    }
+    .btn-img {
+      width: 100%;
+      height: 100%; 
+      border: none;
+      background: #ffffff;
+      .image-item button img {
+        top: 50%; 
+        left: 50%;
+        max-width: 100%; 
+        height: auto;
+      }
+    }
+   
+  }
+}
+
+/* Dispositivos grandes */
+@media (min-width: 1200px) {
+  .img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    .image-item {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+    }
+    .btn-img {
+      width: 100%;
+      height: 100%; 
+      border: none;
+      background: #ffffff;
+      .image-item button img {
+        top: 50%; 
+        left: 50%;
+        max-width: 100%; 
+        height: auto;
+      }
+    }
+   
+  }
+}
